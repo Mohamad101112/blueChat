@@ -1,0 +1,27 @@
+
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+    background: #308ce3;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 135px;
+    font-size: 25px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.hero img {
+    max-width: 750px;
+    margin-right: 15px;
+    border-radius: 15px;
+    width: 100%;
+}

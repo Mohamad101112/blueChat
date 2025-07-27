@@ -1,0 +1,43 @@
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*! width: 100%; */
+  padding: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav {
+    background: #0d49bc;
+    padding: 0;
+    height: 63px;
+    font: sans-serif;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+
+
+  h1 {
+    /*! margin: auto; */
+  }
+
+  .loginCta {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: #308ce3;
+    padding: 15px;
+    border-radius: 33px;
+    font-size: 21px;
+    cursor: pointer;
+}

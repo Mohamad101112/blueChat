@@ -1,0 +1,68 @@
+.LoginCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 249px auto;
+    height: 406px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #1844c8;
+    padding: 10px;
+    border-radius: 25px;
+    color: rgba(255, 255, 255, 0.849);  
+    text-align: center;
+}
+
+input {
+    background: #ffffffd9;
+    border: none;
+    margin: 25px;
+    padding: 15px 50px;
+    border-radius: 25px;
+}
+
+#cc {
+    background: #ffffffd9;
+  border: none;
+  
+  padding: 10px 10px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#root {
+    /*! background: black; */
+    /*! height: 100%; */
+  }
+
+  .back {
+    display: flex;
+    width: 100%;
+  }
+
+  .back-btn {
+    display: flex;
+    padding: 5px 15px;
+    background: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  color: #242424;
+  }
+
+  .submitLogin{
+    background-color: rgba(255, 255, 255, 0.341);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
