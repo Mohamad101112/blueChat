@@ -1,6 +1,6 @@
 export function Hero(props) {
 
-    const {setIsAuthenticating} = props;
+    const {setPage} = props;
 
     return(
         <div className="hero">
@@ -9,7 +9,7 @@ export function Hero(props) {
             <p>A simple messaging chat application</p>
             <button 
             className="loginCta"
-            onClick={() => { setIsAuthenticating(true)}}
+            onClick={() => { setPage("login")}}
             >Get started</button>
             </div>
             <img src="public/hero.png" />
