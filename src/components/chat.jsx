@@ -2,6 +2,8 @@ import { addDoc, collection, doc, getDoc, getDocs, query, setDoc, where } from "
 import { auth, db } from "../firebase"
 import { useEffect, useState } from "react";
 
+
+
 export function Chat({setIsLoggedIn,isUserNameSet,setIsUserNameSet}) {
     const [userName,setUserName] = useState("");
     const [loading, setLoading] = useState(true);
@@ -18,6 +20,8 @@ export function Chat({setIsLoggedIn,isUserNameSet,setIsUserNameSet}) {
             if (!docSnap.exists()) {
                 console.log("not found");
                 setIsUserNameSet(true);
+            }else{
+                setUserName(docSnap.data().name);
             }
             setLoading(false);
         }
@@ -56,7 +60,6 @@ export function Chat({setIsLoggedIn,isUserNameSet,setIsUserNameSet}) {
         // console.log(querySnapshot)
     }
 
-
     async function submitUserName() {
         setError("");
 
@@ -93,15 +96,32 @@ export function Chat({setIsLoggedIn,isUserNameSet,setIsUserNameSet}) {
             onClick={submitUserName}>submit</button>
         </>
         ):(
+            <>
+        <div className="header">
+        <img className="pfp" src={`https://api.dicebear.com/6.x/initials/svg?seed=${userName}`} alt="" />
 
-            <div>bluechat admin <button 
+         <button 
         className="logout"
         onClick={()=>{
             auth.signOut()
             setIsLoggedIn(false)
         }
+
+        
         }
-        >signOut</button> </div>
+        >signOut</button>
+         </div>
+
+
+        <div className="content">
+
+         <div className="sidebar">
+         </div>
+
+         <div className="messages"></div>
+
+        </div>
+        </>
         )
         
 
